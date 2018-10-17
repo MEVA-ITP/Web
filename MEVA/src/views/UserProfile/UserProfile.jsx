@@ -13,7 +13,7 @@ import CardAvatar from "components/Card/CardAvatar.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 
-import avatar from "assets/img/faces/marc.jpg";
+import avatar from "assets/img/faces/logo.jpg";
 
 const styles = {
   cardCategoryWhite: {
@@ -157,12 +157,12 @@ function UserProfile(props) {
               </a>
             </CardAvatar>
             <CardBody profile>
-              <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
+              <h6 className={classes.cardCategory}>Team</h6>
+              <h4 className={classes.cardTitle}>OnQuip</h4>
               <p className={classes.description}>
-                Don't be scared of the truth because we need to restart the
-                human foundation in truth And I love you like Kanye loves Kanye
-                I love Rick Owens’ bed design but the back is...
+                Wir sind eine Schüler Gruppe aus der Höheren Technischen
+                Lehranstalt TGM und diese Website ist ein Projekt im 4.Jahrgang
+                um das Ausleihen unseres Equipments zu vereinfachen…
               </p>
               <Button color="primary" round>
                 Follow

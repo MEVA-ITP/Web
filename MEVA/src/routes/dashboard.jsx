@@ -53,20 +53,21 @@ const dashboardRoutes = [
     icon: BubbleChart,
     component: Icons
   },
-  {
-    path: "/maps",
-    sidebarName: "Maps",
-    navbarName: "Map",
-    icon: LocationOn,
-    component: Maps
-  },
-  {
-    path: "/maps",
-    sidebarName: "Contacts",
-    navbarName: "Map",
-    icon: LocationOn,
-    component: Maps
-  },
+
+//  {
+//    path: "/maps",
+//    sidebarName: "Maps",
+//    navbarName: "Map",
+//    icon: LocationOn,
+//    component: Maps
+//  },
+//  {
+//    path: "/maps",
+//    sidebarName: "Contacts",
+//    navbarName: "Map",
+//    icon: LocationOn,
+//    component: Maps
+//  },
   {
     path: "/notifications",
     sidebarName: "Notifications",
