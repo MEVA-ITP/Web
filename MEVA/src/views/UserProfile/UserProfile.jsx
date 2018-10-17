@@ -47,18 +47,6 @@ function UserProfile(props) {
             </CardHeader>
             <CardBody>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={5}>
-                  <CustomInput
-                    labelText="Company (disabled)"
-                    id="company-disabled"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                    inputProps={{
-                      disabled: true
-                    }}
-                  />
-                </GridItem>
                 <GridItem xs={12} sm={12} md={3}>
                   <CustomInput
                     labelText="Username"
@@ -67,6 +55,15 @@ function UserProfile(props) {
                       fullWidth: true
                     }}
                   />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={5}>
+                    <CustomInput
+                        labelText="Telephone Number"
+                        id="username"
+                        formControlProps={{
+                            fullWidth: true
+                        }}
+                    />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
@@ -101,15 +98,6 @@ function UserProfile(props) {
               <GridContainer>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="City"
-                    id="city"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
                     labelText="Country"
                     id="country"
                     formControlProps={{
@@ -119,12 +107,30 @@ function UserProfile(props) {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="Postal Code"
-                    id="postal-code"
+                    labelText="City"
+                    id="city"
                     formControlProps={{
                       fullWidth: true
                     }}
                   />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={4}>
+                  <CustomInput
+                    labelText="Adress"
+                    id="username"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={4}>
+                   <CustomInput
+                        labelText="Postal Code"
+                        id="postal-code"
+                        formControlProps={{
+                             fullWidth: true
+                        }}
+                    />
                 </GridItem>
               </GridContainer>
               <GridContainer>
