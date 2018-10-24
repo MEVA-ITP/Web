@@ -55,8 +55,8 @@ class Dashboard extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <GridContainer>
-          <GridItem xs={12} sm={6} md={3}>
+          {false &&<GridContainer>
+          <GridItem xs={2} sm={6} md={3}>
             <Card>
               <CardHeader color="warning" stats icon>
                 <CardIcon color="warning">
@@ -130,27 +130,24 @@ class Dashboard extends React.Component {
               </CardFooter>
             </Card>
           </GridItem>
-        </GridContainer>
+        </GridContainer>}
+
+
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={6} sm={6} md={4}>
             <Card chart>
               <CardHeader color="success">
-                <ChartistGraph
-                  className="ct-chart"
-                  data={dailySalesChart.data}
-                  type="Line"
-                  options={dailySalesChart.options}
-                  listener={dailySalesChart.animation}
-                />
+                  <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={275} height={150} mode="fit" />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Daily Sales</h4>
-                <p className={classes.cardCategory}>
-                  <span className={classes.successText}>
-                    <ArrowUpward className={classes.upArrowCardCategory} /> 55%
-                  </span>{" "}
-                  increase in today sales.
-                </p>
+                <h4 className={classes.cardTitle}>Produkt XY</h4>
+                 <p>Raum: Fotolabor </p>
+                 <p>Inventarnummer: 3758k 648</p>
+                 <p>Status: Verfügbar </p>
+                <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
+
+
+
               </CardBody>
               <CardFooter chart>
                 <div className={classes.stats}>
