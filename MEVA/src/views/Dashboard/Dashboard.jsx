@@ -141,11 +141,11 @@ class Dashboard extends React.Component {
               </CardHeader>
               <CardBody>
                 <h4 className={classes.cardTitle}>Produkt XY</h4>
-                 <p>Raum: Fotolabor </p>
-                 <p>Inventarnummer: 3758k 648</p>
-                 <p>Status: Verfügbar </p>
-                <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
-
+                 <p><i style={{textAlign: 'left'}}>Raum:</i><i style={{textAlign: 'right'}}> Fotolabor </i></p>
+                 <i>Inventarnummer:</i><i> 3758k 648</i>
+                 <p>Status:</p><p> Verfügbar </p>
+                  <p>Kategorie:</p><p> Drucker</p>
+                 <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
 
 
               </CardBody>
@@ -156,7 +156,7 @@ class Dashboard extends React.Component {
               </CardFooter>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+           {false &&<GridItem xs={12} sm={12} md={4}>
             <Card chart>
               <CardHeader color="warning">
                 <ChartistGraph
@@ -180,8 +180,8 @@ class Dashboard extends React.Component {
                 </div>
               </CardFooter>
             </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          </GridItem>}
+           {false &&<GridItem xs={12} sm={12} md={4}>
             <Card chart>
               <CardHeader color="danger">
                 <ChartistGraph
@@ -204,7 +204,7 @@ class Dashboard extends React.Component {
                 </div>
               </CardFooter>
             </Card>
-          </GridItem>
+          </GridItem>}
         </GridContainer>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
