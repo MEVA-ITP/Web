@@ -10,7 +10,7 @@ import Unarchive from "@material-ui/icons/Unarchive";
 // core components/views
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
-import TableList from "views/TableList/TableList.jsx";
+import Hardware from "views/Hardware/Hardware.jsx";
 import Typography from "views/Typography/Typography.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import Maps from "views/Maps/Maps.jsx";
@@ -33,11 +33,11 @@ const dashboardRoutes = [
     component: UserProfile
   },
   {
-    path: "/table",
+    path: "/Hardware",
     sidebarName: "Hardware",
-    navbarName: "Table List",
+    navbarName: "Hardware",
     icon: "content_paste",
-    component: TableList
+    component: Hardware
   },
   {
     path: "/typography",

@@ -4069,7 +4069,7 @@ material-dashboard-react
             ├───Icons
             ├───Maps
             ├───Notifications
-            ├───TableList
+            ├───Hardware
             ├───Typography
             ├───UpgradeToPro
             └───UserProfile
