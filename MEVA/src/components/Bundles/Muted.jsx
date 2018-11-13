@@ -3,19 +3,18 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import typographyStyle from "assets/jss/material-dashboard-react/components/typographyStyle.jsx";
-
-function Primary({ ...props }) {
+import bundlesStyle from "../../assets/jss/material-dashboard-react/components/BundlesStyle";
+function Muted({ ...props }) {
   const { classes, children } = props;
   return (
-    <div className={classes.defaultFontStyle + " " + classes.primaryText}>
+    <div className={classes.defaultFontStyle + " " + classes.mutedText}>
       {children}
     </div>
   );
 }
 
-Primary.propTypes = {
+Muted.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(typographyStyle)(Primary);
+export default withStyles(bundlesStyle)(Muted);

@@ -46,7 +46,7 @@ function Hardware(props) {
   return (
     <GridContainer>
 
-        <GridItem xs={6} sm={6} md={4}>
+        <GridItem xs={12} sm={6} md={4}>
             <Card chart>
                 <CardHeader>
                     <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={"100%"} height={"100%"} mode="fit" />
@@ -67,7 +67,7 @@ function Hardware(props) {
             </Card>
         </GridItem>
 
-        <GridItem xs={6} sm={6} md={4}>
+        <GridItem xs={12} sm={6} md={4}>
             <Card chart>
                 <CardHeader>
                     <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={"100%"} height={"100%"}  mode="fit" />
@@ -88,7 +88,7 @@ function Hardware(props) {
             </Card>
         </GridItem>
 
-        <GridItem xs={6} sm={6} md={4}>
+        <GridItem xs={12} sm={6} md={4}>
             <Card chart>
                 <CardHeader>
                     <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={"100%"} height={"100%"}  mode="fit" />
@@ -109,7 +109,7 @@ function Hardware(props) {
             </Card>
         </GridItem>
 
-        <GridItem xs={6} sm={6} md={4}>
+        <GridItem xs={12} sm={6} md={4}>
             <Card chart>
                 <CardHeader>
                     <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={"100%"} height={"100%"}  mode="fit" />

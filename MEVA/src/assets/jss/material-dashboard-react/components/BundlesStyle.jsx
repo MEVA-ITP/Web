@@ -7,7 +7,7 @@ import {
   dangerColor
 } from "assets/jss/material-dashboard-react.jsx";
 
-const typographyStyle = {
+const bundlesStyle = {
   defaultFontStyle: {
     ...defaultFont,
     fontSize: "14px"
@@ -52,4 +52,4 @@ const typographyStyle = {
   }
 };
 
-export default typographyStyle;
+export default bundlesStyle;

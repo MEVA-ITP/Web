@@ -3,19 +3,19 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import typographyStyle from "assets/jss/material-dashboard-react/components/typographyStyle.jsx";
+import bundlesStyle from "../../assets/jss/material-dashboard-react/components/BundlesStyle";
 
-function Success({ ...props }) {
+function Primary({ ...props }) {
   const { classes, children } = props;
   return (
-    <div className={classes.defaultFontStyle + " " + classes.successText}>
+    <div className={classes.defaultFontStyle + " " + classes.primaryText}>
       {children}
     </div>
   );
 }
 
-Success.propTypes = {
+Primary.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(typographyStyle)(Success);
+export default withStyles(bundlesStyle)(Primary);
