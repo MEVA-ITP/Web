@@ -10,12 +10,10 @@ import Unarchive from "@material-ui/icons/Unarchive";
 // core components/views
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
-import TableList from "views/TableList/TableList.jsx";
-import Typography from "views/Typography/Typography.jsx";
+import Hardware from "views/Hardware/Hardware.jsx";
+import Bundles from "views/Bundles/Bundles.jsx";
 import Icons from "views/Icons/Icons.jsx";
-import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
-import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
 
 const dashboardRoutes = [
   {
@@ -33,39 +31,25 @@ const dashboardRoutes = [
     component: UserProfile
   },
   {
-    path: "/table",
+    path: "/Hardware",
     sidebarName: "Hardware",
-    navbarName: "Table List",
+    navbarName: "Hardware",
     icon: "content_paste",
-    component: TableList
+    component: Hardware
   },
   {
-    path: "/typography",
+    path: "/Bundles",
     sidebarName: "Bundles",
-    navbarName: "Typography",
+    navbarName: "Bundles",
     icon: LibraryBooks,
-    component: Typography
+    component: Bundles
   },
   {
     path: "/icons",
-    sidebarName: "Borrwed Products",
+    sidebarName: "Loaned Products",
     navbarName: "Icons",
     icon: BubbleChart,
     component: Icons
-  },
-  {
-    path: "/maps",
-    sidebarName: "Maps",
-    navbarName: "Map",
-    icon: LocationOn,
-    component: Maps
-  },
-  {
-    path: "/maps",
-    sidebarName: "Contacts",
-    navbarName: "Map",
-    icon: LocationOn,
-    component: Maps
   },
   {
     path: "/notifications",

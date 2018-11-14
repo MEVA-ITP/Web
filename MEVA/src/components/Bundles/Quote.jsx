@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import typographyStyle from "assets/jss/material-dashboard-react/components/typographyStyle.jsx";
-
+import bundlesStyle from "../../assets/jss/material-dashboard-react/components/BundlesStyle";
 function Quote({ ...props }) {
   const { classes, text, author } = props;
   return (
@@ -21,4 +20,4 @@ Quote.propTypes = {
   author: PropTypes.node
 };
 
-export default withStyles(typographyStyle)(Quote);
+export default withStyles(bundlesStyle)(Quote);

@@ -3,19 +3,19 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import typographyStyle from "assets/jss/material-dashboard-react/components/typographyStyle.jsx";
+import bundlesStyle from "../../assets/jss/material-dashboard-react/components/BundlesStyle";
 
-function Warning({ ...props }) {
+function Danger({ ...props }) {
   const { classes, children } = props;
   return (
-    <div className={classes.defaultFontStyle + " " + classes.warningText}>
+    <div className={classes.defaultFontStyle + " " + classes.dangerText}>
       {children}
     </div>
   );
 }
 
-Warning.propTypes = {
+Danger.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(typographyStyle)(Warning);
+export default withStyles(bundlesStyle)(Danger);
