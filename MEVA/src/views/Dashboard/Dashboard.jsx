@@ -79,7 +79,7 @@ const styles = theme => ({
 
 const images = [
     {
-        url: '../../assets/img/druckerxy.jpg',
+        url: '../documentation/assets/img/reactlogo.png',
         title: 'Kamera',
         width: '33%',
     },
