@@ -81,17 +81,47 @@ const images = [
     {
         url: '../../assets/img/druckerxy.jpg',
         title: 'Breakfast',
-        width: '40%',
+        width: '33%',
     },
     {
         url: '/static/images/grid-list/burgers.jpg',
-        title: 'Burgers',
-        width: '30%',
+        title: 'Videokameras',
+        width: '33%',
+    },
+    {
+        url: '/static/images/grid-list/camera.jpg',
+        title: 'Stativ',
+        width: '33%',
+    },
+    {
+        url: '/static/images/grid-list/camera.jpg',
+        title: 'Bootsticks',
+        width: '33%',
+    },
+    {
+        url: '/static/images/grid-list/camera.jpg',
+        title: 'Komponente',
+        width: '33%',
+    },
+    {
+        url: '/static/images/grid-list/camera.jpg',
+        title: 'SD-Cards',
+        width: '33%',
     },
     {
         url: '/static/images/grid-list/camera.jpg',
         title: 'Camera',
-        width: '30%',
+        width: '33%',
+    },
+    {
+        url: '/static/images/grid-list/camera.jpg',
+        title: 'Camera',
+        width: '33%',
+    },
+    {
+        url: '/static/images/grid-list/camera.jpg',
+        title: 'Camera',
+        width: '33%',
     },
 ];
 
