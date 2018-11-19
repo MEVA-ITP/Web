@@ -11,6 +11,13 @@ import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 
 const style = {
+    gridContainer: {
+        backgroundColor: "red",
+    },
+    gridItem: {
+        width: "500px",
+        height: "500px",
+    },
     cardCategoryWhite: {
         "&,& a,& a:hover,& a:focus": {
             color: "rgba(255,255,255,.62)",
@@ -43,11 +50,11 @@ const style = {
 function TypographyPage(props) {
     const {classes} = props;
     return (
-        <GridContainer>
-            <GridItem xs={12} sm={6} md={4}>
+        <GridContainer classes={{container: classes.gridContainer}}>
+            <GridItem xs={12} sm={6} md={4} classes={{container: classes.grid}}>
                 <Card chart>
                     <CardHeader>
-                        <img src={require('../../assets/img/PIXMA MX925.jpg')} width={"100%"} height={"100%"}
+                        <img src={require('../../assets/img/druckerxy.jpg')} width={"100%"} height={"100%"}
                              mode="fit"/>
                     </CardHeader>
                     <CardBody>

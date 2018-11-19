@@ -47,7 +47,7 @@ const dashboardRoutes = [
   {
     path: "/icons",
     sidebarName: "Loaned Products",
-    navbarName: "Icons",
+    navbarName: "Loaned Products",
     icon: BubbleChart,
     component: Icons
   },

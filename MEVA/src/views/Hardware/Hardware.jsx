@@ -44,12 +44,11 @@ const styles = {
 function Hardware(props) {
   const { classes } = props;
   return (
-    <GridContainer>
-
+    <GridContainer classes={{container: classes.gridContainer}}>
         <GridItem xs={12} sm={6} md={4}>
             <Card chart>
                 <CardHeader>
-                    <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={"100%"} height={"100%"} mode="fit" />
+                    <img src={ require('../../assets/img/druckerxy.jpg') } width={"100%"} height={"100%"} mode="fit" />
                 </CardHeader>
                 <CardBody>
                     <h4 className={classes.cardTitle}>Produkt XY</h4>
@@ -70,7 +69,7 @@ function Hardware(props) {
         <GridItem xs={12} sm={6} md={4}>
             <Card chart>
                 <CardHeader>
-                    <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={"100%"} height={"100%"}  mode="fit" />
+                    <img src={ require('../../assets/img/druckerxy.jpg') } width={"100%"} height={"100%"} mode="fit" />
                 </CardHeader>
                 <CardBody>
                     <h4 className={classes.cardTitle}>Produkt XY</h4>
@@ -91,7 +90,7 @@ function Hardware(props) {
         <GridItem xs={12} sm={6} md={4}>
             <Card chart>
                 <CardHeader>
-                    <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={"100%"} height={"100%"}  mode="fit" />
+                    <img src={ require('../../assets/img/druckerxy.jpg') } width={"100%"} height={"100%"} mode="fit" />
                 </CardHeader>
                 <CardBody>
                     <h4 className={classes.cardTitle}>Produkt XY</h4>
@@ -112,7 +111,7 @@ function Hardware(props) {
         <GridItem xs={12} sm={6} md={4}>
             <Card chart>
                 <CardHeader>
-                    <img src={ require('../../assets/img/PIXMA MX925.jpg') } width={"100%"} height={"100%"}  mode="fit" />
+                    <img src={ require('../../assets/img/druckerxy.jpg') } width={"100%"} height={"100%"} mode="fit" />
                 </CardHeader>
                 <CardBody>
                     <h4 className={classes.cardTitle}>Produkt XY</h4>
