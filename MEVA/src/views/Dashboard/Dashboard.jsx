@@ -79,48 +79,48 @@ const styles = theme => ({
 
 const images = [
     {
-        url: '../../assets/img/druckerxy.jpg',
-        title: 'Breakfast',
+        url: '/img/druckerxy.jpg',
+        title: 'Loaned Products',
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/burgers.jpg',
+        url: '/img/druckerxy.jpg',
         title: 'Videokameras',
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
+        url: '//img/druckerxy.jpg',
         title: 'Stativ',
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
+        url: '/img/druckerxy.jpg',
         title: 'Bootsticks',
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
+        url: '/img/druckerxy.jpg',
         title: 'Komponente',
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
+        url: '/img/druckerxy.jpg',
         title: 'SD-Cards',
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
+        url: '/img/druckerxy.jpg',
         title: 'Camera',
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
-        title: 'Camera',
+        url: '/img/druckerxy.jpg',
+        title: 'Notifaction',
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/camera.jpg',
-        title: 'Camera',
+        url: '/img/druckerxy.jpg',
+        title: 'Bundles',
         width: '33%',
     },
 ];
