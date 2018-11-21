@@ -89,7 +89,7 @@ const images = [
         width: '33%',
     },
     {
-        url: '//img/druckerxy.jpg',
+        url: '/img/druckerxy.jpg',
         title: 'Stativ',
         width: '33%',
     },
