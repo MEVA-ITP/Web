@@ -84,7 +84,7 @@ const images = [
         width: '33%',
     },
     {
-        url: '/static/images/grid-list/burgers.jpg',
+        url: '../../assets/img/reactlogo.png',
         title: 'Boot-Sticks',
         width: '33%',
     },
@@ -92,7 +92,7 @@ const images = [
         url: '/static/images/grid-list/camera.jpg',
         title: 'Equipment',
         width: '33%',
-    },
+    }
 ];
 
 function ButtonBases(props) {
@@ -113,7 +113,7 @@ function ButtonBases(props) {
           <span
               className={classes.imageSrc}
               style={{
-                  backgroundImage: `url(${image.url})`,
+                  backgroundImage: `url(${image.url})`
               }}
           />
                     <span className={classes.imageBackdrop} />
