@@ -1,4 +1,8 @@
 *.idea
 __MACOSX
 MEVA/__MACOSX
+<<<<<<< HEAD
 package-lock.json
+=======
+package-lock.jsonNP
+>>>>>>> salagic
