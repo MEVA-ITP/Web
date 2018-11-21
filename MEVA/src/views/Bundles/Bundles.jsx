@@ -11,9 +11,6 @@ import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 
 const style = {
-    gridContainer: {
-        backgroundColor: "red",
-    },
     gridItem: {
         width: "500px",
         height: "500px",
@@ -50,29 +47,11 @@ const style = {
 function TypographyPage(props) {
     const {classes} = props;
     return (
+    <div style={{paddingLeft: '30%', paddingRight: '15%', paddingBottom: '15%', paddingTop: '5%', position:'center'}}>
         <GridContainer classes={{container: classes.gridContainer}}>
-            <GridItem xs={12} sm={6} md={4} classes={{container: classes.grid}}>
-                <Card chart>
-                    <CardHeader>
-                        <img src={require('../../assets/img/druckerxy.jpg')} width={"100%"} height={"100%"}
-                             mode="fit"/>
-                    </CardHeader>
-                    <CardBody>
-                        <h4 className={classes.cardTitle}>Produkt XY</h4>
-                        <p><i style={{textAlign: 'left'}}>Raum:</i><i style={{textAlign: 'right'}}> Fotolabor </i></p>
-                        <i>Inventarnummer:</i><i> 3758k 648</i>
-                        <p>Status:</p><p> Verfügbar </p>
-                        <p>Kategorie:</p><p> Drucker</p>
-                        <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
-                    </CardBody>
-                    <CardFooter chart>
-                        <div className={classes.stats}>
-                            <AccessTime/> updated 4 minutes ago
-                        </div>
-                    </CardFooter>
-                </Card>
-            </GridItem>
+            <img src={require('../../assets/img/workinprogress.jpg')} width={"80%"} height={"80%"} mode="fit"/>
         </GridContainer>
+    </div>
     );
 }
 

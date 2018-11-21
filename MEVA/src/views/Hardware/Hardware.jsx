@@ -60,7 +60,7 @@ function Hardware(props) {
                     <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
                 </CardBody>
                 <div style={{paddingLeft: '20%', paddingRight: '20%', paddingBottom: '4%'}}>
-                    <Button style={{width: '100%', height: '100%'}} variant="contained" size="large" color="primary" className={classes.button}>
+                    <Button style={{width: '100%', height: '100%', backgroundColor: '#00BCD4'}} variant="contained" size="large" color="primary" className={classes.button}>
                         Bestellung
                     </Button>
                 </div>
@@ -86,6 +86,11 @@ function Hardware(props) {
                     <p>Kategorie:</p><p> Drucker</p>
                     <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
                 </CardBody>
+                <div style={{paddingLeft: '20%', paddingRight: '20%', paddingBottom: '4%'}}>
+                    <Button style={{width: '100%', height: '100%', backgroundColor: '#00BCD4'}} variant="contained" size="large" color="primary" className={classes.button}>
+                        Bestellung
+                    </Button>
+                </div>
                 <CardFooter chart>
                     <div className={classes.stats}>
                         <AccessTime /> updated 4 minutes ago
@@ -107,6 +112,11 @@ function Hardware(props) {
                     <p>Kategorie:</p><p> Drucker</p>
                     <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
                 </CardBody>
+                <div style={{paddingLeft: '20%', paddingRight: '20%', paddingBottom: '4%'}}>
+                    <Button style={{width: '100%', height: '100%', backgroundColor: '#00BCD4'}} variant="contained" size="large" color="primary" className={classes.button}>
+                        Bestellung
+                    </Button>
+                </div>
                 <CardFooter chart>
                     <div className={classes.stats}>
                         <AccessTime /> updated 4 minutes ago
@@ -128,6 +138,11 @@ function Hardware(props) {
                     <p>Kategorie:</p><p> Drucker</p>
                     <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
                 </CardBody>
+                <div style={{paddingLeft: '20%', paddingRight: '20%', paddingBottom: '4%'}}>
+                    <Button style={{width: '100%', height: '100%', backgroundColor: '#00BCD4'}} variant="contained" size="large" color="primary" className={classes.button}>
+                        Bestellung
+                    </Button>
+                </div>
                 <CardFooter chart>
                     <div className={classes.stats}>
                         <AccessTime /> updated 4 minutes ago
