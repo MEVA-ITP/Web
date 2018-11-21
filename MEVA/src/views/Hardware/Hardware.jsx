@@ -10,6 +10,7 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import AccessTime from "@material-ui/core/SvgIcon/SvgIcon";
 import CardFooter from "components/Card/CardFooter.jsx";
+import Button from '@material-ui/core/Button';
 
 const styles = {
   cardCategoryWhite: {
@@ -58,10 +59,16 @@ function Hardware(props) {
                     <p>Kategorie:</p><p> Drucker</p>
                     <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
                 </CardBody>
+                <div style={{paddingLeft: '20%', paddingRight: '20%', paddingBottom: '4%'}}>
+                    <Button style={{width: '100%', height: '100%'}} variant="contained" size="large" color="primary" className={classes.button}>
+                        Bestellung
+                    </Button>
+                </div>
                 <CardFooter chart>
                     <div className={classes.stats}>
-                        <AccessTime /> updated 4 minutes ago
+                        <AccessTime/>updated 4 minutes ago
                     </div>
+
                 </CardFooter>
             </Card>
         </GridItem>
