@@ -6,61 +6,45 @@ import Hidden from "@material-ui/core/Hidden";
 // core components
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
+import Table from "components/Table/Table.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
+import AccessTime from "@material-ui/core/SvgIcon/SvgIcon";
+import CardFooter from "components/Card/CardFooter.jsx";
+import Button from '@material-ui/core/Button';
 
 import iconsStyle from "assets/jss/material-dashboard-react/views/iconsStyle.jsx";
 
 function Icons(props) {
   const { classes } = props;
   return (
-    <GridContainer>
+  <GridContainer>
       <GridItem xs={12} sm={12} md={12}>
-        <Card plain>
-          <CardHeader plain color="primary">
-            <h4 className={classes.cardTitleWhite}>Material Design Icons</h4>
-            <p className={classes.cardCategoryWhite}>
-              Handcrafted by our friends from{" "}
-              <a
-                href="https://design.google.com/icons/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Google
-              </a>
-            </p>
-          </CardHeader>
-          <CardBody>
-            <Hidden only={["sm", "xs"]}>
-              <iframe
-                className={classes.iframe}
-                src="https://material.io/icons/"
-                title="Icons iframe"
-              >
-                <p>Your browser does not support iframes.</p>
-              </iframe>
-            </Hidden>
-            <Hidden only={["lg", "md"]}>
-              <GridItem xs={12} sm={12} md={6}>
-                <h5>
-                  The icons are visible on Desktop mode inside an iframe. Since
-                  the iframe is not working on Mobile and Tablets please visit
-                  the icons on their original page on Google. Check the
-                  <a
-                    href="https://design.google.com/icons/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Material Icons
-                  </a>
-                </h5>
-              </GridItem>
-            </Hidden>
-          </CardBody>
-        </Card>
+          <Card>
+              <CardHeader color="primary">
+                  <h4 className={classes.cardTitleWhite}>Simple Table</h4>
+                  <p className={classes.cardCategoryWhite}>
+                      Here is a subtitle for this table
+                  </p>
+              </CardHeader>
+              <CardBody>
+                  <Table
+                      tableHeaderColor="primary"
+                      tableHead={["Vorname", "Nachname", "Email", "Klasse","Verliehener Produkt","Rückgabe am"]}
+                      tableData={[
+                          ["Semih",     "Cakir",      "scakir@student.tgm.ac.at",        "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                          ["Ulrich",    "Frühstück",  "ufruestueck@student.tgm.ac.at",   "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                          ["Christian", "Krebich",     "ckreibich@student.tgm.ac.at",    "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                          ["Semir",     "Alagic",      "salagic@student.tgm.ac.at",      "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                          ["Viktor",    "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                          ["Yasin",     "Gomaa",       "ygomaa@student.tgm.ac.at ",      "4AHIT", "Kamera 365XYZ", "22.11.2018"]
+                      ]}
+                  />
+              </CardBody>
+          </Card>
       </GridItem>
-    </GridContainer>
+  </GridContainer>
   );
 }
 
