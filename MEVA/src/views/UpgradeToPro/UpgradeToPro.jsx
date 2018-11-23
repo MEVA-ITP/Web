@@ -82,7 +82,7 @@ const styles = {
 };
 
 function UpgradeToPro(props) {
-    const { classes } = props;
+    const {classes} = props;
     return (
         <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8}>
@@ -101,7 +101,7 @@ function UpgradeToPro(props) {
                             <table className={classes.table}>
                                 <thead>
                                 <tr>
-                                    <th />
+                                    <th/>
                                     <th className={classes.center}>Free</th>
                                     <th className={classes.center}>PRO</th>
                                 </tr>
@@ -126,12 +126,12 @@ function UpgradeToPro(props) {
                                     <td>Login, Register, Pricing, Lock Pages</td>
                                     <td className={classes.center}>
                                         <Danger>
-                                            <Close />
+                                            <Close/>
                                         </Danger>
                                     </td>
                                     <td className={classes.center}>
                                         <Success>
-                                            <Check />
+                                            <Check/>
                                         </Success>
                                     </td>
                                 </tr>
@@ -142,12 +142,12 @@ function UpgradeToPro(props) {
                                     </td>
                                     <td className={classes.center}>
                                         <Danger>
-                                            <Close />
+                                            <Close/>
                                         </Danger>
                                     </td>
                                     <td className={classes.center}>
                                         <Success>
-                                            <Check />
+                                            <Check/>
                                         </Success>
                                     </td>
                                 </tr>
@@ -155,12 +155,12 @@ function UpgradeToPro(props) {
                                     <td>Mini Sidebar</td>
                                     <td className={classes.center}>
                                         <Danger>
-                                            <Close />
+                                            <Close/>
                                         </Danger>
                                     </td>
                                     <td className={classes.center}>
                                         <Success>
-                                            <Check />
+                                            <Check/>
                                         </Success>
                                     </td>
                                 </tr>
@@ -168,22 +168,22 @@ function UpgradeToPro(props) {
                                     <td>Premium Support</td>
                                     <td className={classes.center}>
                                         <Danger>
-                                            <Close />
+                                            <Close/>
                                         </Danger>
                                     </td>
                                     <td className={classes.center}>
                                         <Success>
-                                            <Check />
+                                            <Check/>
                                         </Success>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td />
+                                    <td/>
                                     <td className={classes.center}>Free</td>
                                     <td className={classes.center}>Just $59</td>
                                 </tr>
                                 <tr>
-                                    <td />
+                                    <td/>
                                     <td className={classes.center}>
                                         <Button round disabled>
                                             Current Version

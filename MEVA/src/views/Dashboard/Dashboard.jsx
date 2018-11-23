@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
@@ -13,7 +13,7 @@ const styles = theme => ({
     },
     image: {
         position: 'relative',
-        height: 200, 
+        height: 200,
         [theme.breakpoints.down('xs')]: {
             width: '100% !important', // Overrides inline-style
             height: 100,
@@ -111,7 +111,7 @@ const images = [
 ];
 
 function ButtonBases(props) {
-    const { classes } = props;
+    const {classes} = props;
 
     return (
         <div className={classes.root}>
@@ -131,7 +131,7 @@ function ButtonBases(props) {
                   backgroundImage: `url(${image.url})`,
               }}
           />
-                    <span className={classes.imageBackdrop} />
+                    <span className={classes.imageBackdrop}/>
                     <span className={classes.imageButton}>
             <Typography
                 component="span"
@@ -140,7 +140,7 @@ function ButtonBases(props) {
                 className={classes.imageTitle}
             >
               {image.title}
-                <span className={classes.imageMarked} />
+                <span className={classes.imageMarked}/>
             </Typography>
           </span>
                 </ButtonBase>

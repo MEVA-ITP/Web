@@ -4,17 +4,18 @@ import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import bundlesStyle from "../../assets/jss/material-dashboard-react/components/BundlesStyle";
-function Muted({ ...props }) {
-  const { classes, children } = props;
-  return (
-    <div className={classes.defaultFontStyle + " " + classes.mutedText}>
-      {children}
-    </div>
-  );
+
+function Muted({...props}) {
+    const {classes, children} = props;
+    return (
+        <div className={classes.defaultFontStyle + " " + classes.mutedText}>
+            {children}
+        </div>
+    );
 }
 
 Muted.propTypes = {
-  classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired
 };
 
 export default withStyles(bundlesStyle)(Muted);

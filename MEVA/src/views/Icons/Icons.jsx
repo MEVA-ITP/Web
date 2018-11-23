@@ -13,39 +13,39 @@ import CardBody from "components/Card/CardBody.jsx";
 import iconsStyle from "assets/jss/material-dashboard-react/views/iconsStyle.jsx";
 
 function Icons(props) {
-  const { classes } = props;
-  return (
-  <GridContainer>
-      <GridItem xs={12} sm={12} md={12}>
-          <Card>
-              <CardHeader color="primary">
-                  <h4 className={classes.cardTitleWhite}>Simple Table</h4>
-                  <p className={classes.cardCategoryWhite}>
-                      Here is a subtitle for this table
-                  </p>
-              </CardHeader>
-              <CardBody>
-                  <Table
-                      tableHeaderColor="primary"
-                      tableHead={["Vorname", "Nachname", "Email", "Klasse","Verliehener Produkt","Rückgabe am"]}
-                      tableData={[
-                          ["Semih",     "Cakir",      "scakir@student.tgm.ac.at",        "4AHIT", "Kamera 365XYZ", "22.11.2018"],
-                          ["Ulrich",    "Frühstück",  "ufruestueck@student.tgm.ac.at",   "4AHIT", "Kamera 365XYZ", "22.11.2018"],
-                          ["Christian", "Krebich",     "ckreibich@student.tgm.ac.at",    "4BHIT", "Kamera 365XYZ", "22.11.2018"],
-                          ["Semir",     "Alagic",      "salagic@student.tgm.ac.at",      "4BHIT", "Kamera 365XYZ", "22.11.2018"],
-                          ["Viktor",    "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
-                          ["Yasin",     "Gomaa",       "ygomaa@student.tgm.ac.at ",      "4AHIT", "Kamera 365XYZ", "22.11.2018"]
-                      ]}
-                  />
-              </CardBody>
-          </Card>
-      </GridItem>
-  </GridContainer>
-  );
+    const {classes} = props;
+    return (
+        <GridContainer>
+            <GridItem xs={12} sm={12} md={12}>
+                <Card>
+                    <CardHeader color="primary">
+                        <h4 className={classes.cardTitleWhite}>Simple Table</h4>
+                        <p className={classes.cardCategoryWhite}>
+                            Here is a subtitle for this table
+                        </p>
+                    </CardHeader>
+                    <CardBody>
+                        <Table
+                            tableHeaderColor="primary"
+                            tableHead={["Vorname", "Nachname", "Email", "Klasse", "Verliehener Produkt", "Rückgabe am"]}
+                            tableData={[
+                                ["Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018"]
+                            ]}
+                        />
+                    </CardBody>
+                </Card>
+            </GridItem>
+        </GridContainer>
+    );
 }
 
 Icons.propTypes = {
-  classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired
 };
 
 export default withStyles(iconsStyle)(Icons);
