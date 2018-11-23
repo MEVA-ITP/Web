@@ -82,17 +82,6 @@ class Notifications extends React.Component {
         <CardHeader color="primary">
           <h4 className={classes.cardTitleWhite}>Notifications</h4>
           <p className={classes.cardCategoryWhite}>
-            Handcrafted by our friends from{" "}
-            <a target="_blank" href="https://material-ui-next.com/">
-              Material UI
-            </a>{" "}
-            and styled by{" "}
-            <a target="_blank" href="https://www.creative-tim.com/">
-              Creative Tim
-            </a>. Please checkout the{" "}
-            <a href="#pablo" target="_blank">
-              full documentation
-            </a>.
           </p>
         </CardHeader>
         <CardBody>
