@@ -62,11 +62,11 @@ function Hardware(props) {
                     <div style={{paddingLeft: '7%', paddingBottom: '4%'}}>
                         <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginRight: '2%'}}
                                 variant="contained" size="large" color="primary" className={classes.button}>
-                            Bestellung
+                            Reservieren
                         </Button>
                         <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}}
                                 variant="contained" size="large" color="primary" className={classes.button}>
-                            Warenkorb
+                            Auswählen
                         </Button>
                     </div>
                     <CardFooter chart>
@@ -94,11 +94,11 @@ function Hardware(props) {
                     <div style={{paddingLeft: '7%', paddingBottom: '4%'}}>
                         <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginRight: '2%'}}
                                 variant="contained" size="large" color="primary" className={classes.button}>
-                            Bestellung
+                            Reservieren
                         </Button>
                         <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}}
                                 variant="contained" size="large" color="primary" className={classes.button}>
-                            Warenkorb
+                            Auswählen
                         </Button>
                     </div>
                     <CardFooter chart>
@@ -125,11 +125,11 @@ function Hardware(props) {
                     <div style={{paddingLeft: '7%', paddingBottom: '4%'}}>
                         <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginRight: '2%'}}
                                 variant="contained" size="large" color="primary" className={classes.button}>
-                            Bestellung
+                            Reservierung
                         </Button>
                         <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}}
                                 variant="contained" size="large" color="primary" className={classes.button}>
-                            Warenkorb
+                            Auswählen
                         </Button>
                     </div>
                     <CardFooter chart>
@@ -156,11 +156,11 @@ function Hardware(props) {
                     <div style={{paddingLeft: '7%', paddingBottom: '4%'}}>
                         <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginRight: '2%'}}
                                 variant="contained" size="large" color="primary" className={classes.button}>
-                            Bestellung
+                            Reservierung
                         </Button>
                         <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}}
                                 variant="contained" size="large" color="primary" className={classes.button}>
-                            Warenkorb
+                            Auswählen
                         </Button>
                     </div>
                     <CardFooter chart>
