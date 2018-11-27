@@ -20,7 +20,7 @@ function Footer({...props}) {
                             </a>
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
-                            <a href="#company" className={classes.block}>
+                            <a href="https://www.tgm.ac.at" className={classes.block}>
                                 TGM
                             </a>
                         </ListItem>
@@ -40,7 +40,7 @@ function Footer({...props}) {
           <span>
             &copy; {1900 + new Date().getYear()}{" "}
               <a href="#" className={classes.a}>
-              M E V A
+              O N Q U I P
             </a> from student for student and for the mark
           </span>
                 </p>
