@@ -25,6 +25,16 @@ function Footer({...props}) {
                             </a>
                         </ListItem>
                         <ListItem className={classes.inlineBlock}>
+                            <a href="https://owa.tgm.ac.at/owa" className={classes.block}>
+                                MAIL
+                            </a>
+                        </ListItem>
+                        <ListItem className={classes.inlineBlock}>
+                            <a href="https://elearning.tgm.ac.at/" className={classes.block}>
+                                E-Learning
+                            </a>
+                        </ListItem>
+                        <ListItem className={classes.inlineBlock}>
                             <a href="#portfolio" className={classes.block}>
                                 Über uns
                             </a>
