@@ -19,6 +19,12 @@ import dashboardStyle from "assets/jss/material-dashboard-react/layouts/dashboar
 import image from "assets/img/sidebar-2.jpg";
 import logo from "assets/img/logotgm.png";
 
+
+/*Mobile-Version*/
+/*Mobile-Version*/
+/*Mobile-Version*/
+
+
 const switchRoutes = (
     <Switch>
         {dashboardRoutes.map((prop, key) => {

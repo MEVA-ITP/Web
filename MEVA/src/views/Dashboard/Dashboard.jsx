@@ -16,7 +16,7 @@ const styles = theme => ({
         height: 200,
         [theme.breakpoints.down('xs')]: {
             width: '100% !important', // Overrides inline-style
-            height: 100,
+            height: 100, //wenn man das ändert passiert nichts haha
         },
         '&:hover, &$focusVisible': {
             zIndex: 1,
@@ -123,6 +123,7 @@ function ButtonBases(props) {
                     focusVisibleClassName={classes.focusVisible}
                     style={{
                         width: image.width,
+                        padding: 150, //hier kann man die höhe einstellen amk, paddingBottom bringt nichts
                     }}
                 >
           <span
