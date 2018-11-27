@@ -39,7 +39,7 @@ function Footer({...props}) {
                 <p className={classes.right}>
           <span>
             &copy; {1900 + new Date().getYear()}{" "}
-              <a href="#" className={classes.a}>
+              <a href="dashboard" className={classes.a}>
               O N Q U I P
             </a> from student for student and for the mark
           </span>
