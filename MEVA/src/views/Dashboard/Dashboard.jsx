@@ -13,10 +13,10 @@ const styles = theme => ({
     },
     image: {
         position: 'relative',
-        height: 300, //da ändert man die länge
+        height: window.innerHeight*0.33, //da ändert man die länge
         [theme.breakpoints.down('xs')]: {
             width: '100% !important', // Overrides inline-style
-            height: 200, //wenn man das mobile version wird verändert
+            height: 200, //mobile version wird verändert
 
         },
         '&:hover, &$focusVisible': {

@@ -57,7 +57,7 @@ class HeaderLinks extends React.Component {
                         <Search/>
                     </Button>
                 </div>
-                <Button
+                <Button // Dashboard logo oben rechts
                     color={window.innerWidth > 959 ? "transparent" : "white"}
                     justIcon={window.innerWidth > 959}
                     simple={!(window.innerWidth > 959)}
@@ -70,7 +70,7 @@ class HeaderLinks extends React.Component {
                     </Hidden>
                 </Button>
                 <div className={classes.manager}>
-                    <Button
+                    <Button//Notification rechts oben
                         buttonRef={node => {
                             this.anchorEl = node;
                         }}
@@ -150,7 +150,7 @@ class HeaderLinks extends React.Component {
                         )}
                     </Poppers>
                 </div>
-                <Button
+                <Button //profile button oben rechts
                     color={window.innerWidth > 959 ? "transparent" : "white"}
                     justIcon={window.innerWidth > 959}
                     simple={!(window.innerWidth > 959)}
