@@ -13,7 +13,7 @@ const styles = theme => ({
     },
     image: {
         position: 'relative',
-        height: 350, //da ändert man dir länge
+        height: 300, //da ändert man die länge
         [theme.breakpoints.down('xs')]: {
             width: '100% !important', // Overrides inline-style
             height: 200, //wenn man das mobile version wird verändert
