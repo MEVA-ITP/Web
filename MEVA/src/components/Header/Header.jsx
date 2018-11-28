@@ -32,7 +32,7 @@ function Header({...props}) {
         [" " + classes[color]]: color
     });
     return (
-        <AppBar style={{position: 'fixed', backgroundColor:'#eeeeee'}}className={classes.appBar + appBarClasses}>
+        <AppBar style={{position: 'sticky', backgroundColor:'#eeeeee'}}className={classes.appBar + appBarClasses}>
             <Toolbar className={classes.container}>
                 <div className={classes.flex}>
                     {/* Here we create navbar brand, based on route name */}
