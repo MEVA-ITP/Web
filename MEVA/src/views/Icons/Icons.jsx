@@ -21,7 +21,7 @@ function Icons(props) {
                     <CardHeader color="primary">
                         <h4 className={classes.cardTitleWhite}>Simple Table</h4>
                         <p className={classes.cardCategoryWhite}>
-                            Here is a subtitle for this table
+                            History
                         </p>
                     </CardHeader>
                     <CardBody>

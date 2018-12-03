@@ -13,7 +13,7 @@ const styles = theme => ({
     },
     image: {
         position: 'relative',
-        height: window.innerHeight*0.33, //da ändert man die länge
+        height: window.innerHeight * 0.33, //da ändert man die länge
         [theme.breakpoints.down('xs')]: {
             width: '100% !important', // Overrides inline-style
             height: 200, //mobile version wird verändert
@@ -115,25 +115,27 @@ function ButtonBases(props) {
     const {classes} = props;
 
     return (
+        <a href="/hardware">
         <div className={classes.root}>
-            {images.map(image => (
-                <ButtonBase
-                    focusRipple
-                    key={image.title}
-                    className={classes.image}
-                    focusVisibleClassName={classes.focusVisible}
-                    style={{
-                        width: image.width,
-                    }}
-                >
+            {images.map(image => <ButtonBase
+                focusRipple
+                key={image.title}
+                className={classes.image}
+                focusVisibleClassName={classes.focusVisible}
+                style={{
+                    width: image.width,
+                }}
+            >
           <span
+
               className={classes.imageSrc}
               style={{
                   backgroundImage: `url(${image.url})`,
               }}
+
           />
-                    <span className={classes.imageBackdrop}/>
-                    <span className={classes.imageButton}>
+                <span className={classes.imageBackdrop}/>
+                <span className={classes.imageButton}>
             <Typography
                 component="span"
                 variant="subtitle1"
@@ -144,9 +146,9 @@ function ButtonBases(props) {
                 <span className={classes.imageMarked}/>
             </Typography>
           </span>
-                </ButtonBase>
-            ))}
+            </ButtonBase>)}
         </div>
+        </a>
     );
 }
 

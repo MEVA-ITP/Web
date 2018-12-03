@@ -97,7 +97,7 @@ function UserProfile(props) {
                             </GridContainer>
                         </CardBody>
                         <CardFooter>
-                            <Button color="primary">Update Profile</Button>
+                            <Button color="primary" round>Update Profile</Button>
                         </CardFooter>
                     </Card>
                 </GridItem>
