@@ -183,7 +183,7 @@ function Hardware(props) {
                             Here is a subtitle for this table
                         </p>
                     </CardHeader>
-                    <CardBody>
+                    <CardBody>          /* code für eine mini Tabelle */
                         <Table
                             tableHeaderColor="primary"
                             tableHead={["Name", "Country", "City", "Salary"]}

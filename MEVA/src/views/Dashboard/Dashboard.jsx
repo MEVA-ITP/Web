@@ -82,32 +82,22 @@ const images = [
     {
         url: '/img/cam.png',
         title: 'Camera',
-        width: '33%',
+        width: '49%',
     },
     {
         url: '/img/vidcam.png',
         title: 'Videokameras',
-        width: '33%',
+        width: '50%',
     },
     {
         url: '/img/usb.png',
         title: 'Bootsticks',
-        width: '33%',
-    },
-    {
-        url: '/img/cards.png',
-        title: 'SD-Cards',
-        width: '33%',
+        width: '49%',
     },
     {
         url: '/img/equip.png',
         title: 'Equipment',
-        width: '33%',
-    },
-    {
-        url: '/img/druckerxy.png',
-        title: 'Loaned Products',
-        width: '33%',
+        width: '50%',
     },
 ];
 
