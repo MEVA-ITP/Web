@@ -114,9 +114,11 @@ function UserProfile(props) {
                             <p className={classes.description}>
                                 Wir sind eine Schüler Gruppe aus der Höheren Technischen
                                 Lehranstalt TGM und diese Website ist ein Projekt im 4.Jahrgang
-                                um das Ausleihen unseres Equipments zu vereinfachen…
+                                um das Ausleihen unseres Equipments zu vereinfachen.
+                                Folgt uns auf Instagram!
+
                             </p>
-                            <Button color="primary" round>
+                            <Button href="https://www.instagram.com/tgmhit/" color="primary" round>
                                 Follow
                             </Button>
                         </CardBody>
