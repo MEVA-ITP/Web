@@ -76,9 +76,6 @@ function TypographyPage(props) {
                     </Button>
                 </div>
                 <CardFooter chart>
-                    <div className={classes.stats}>
-                        <AccessTime/> updated 4 minutes ago
-                    </div>
                 </CardFooter>
             </Card>
             <GridItem xs={12} sm={6} md={12}>
