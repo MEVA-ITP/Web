@@ -107,7 +107,7 @@ function ButtonBases(props) {
     return (
         <a href="/hardware">
         <div className={classes.root}>
-            {images.map(image => <ButtonBase
+            {images.map(image => <p
                 focusRipple
                 key={image.title}
                 className={classes.image}
@@ -136,7 +136,7 @@ function ButtonBases(props) {
                 <span className={classes.imageMarked}/>
             </Typography>
           </span>
-            </ButtonBase>)}
+            </p>)}
         </div>
         </a>
     );
