@@ -57,7 +57,6 @@ class HeaderLinks extends React.Component {
                         <Search/>
                     </Button>
                 </div>
-                <a href={"/Dashboard/Dashboard.jsx"}>
                 <Button // Dashboard logo oben recht
                     color={window.innerWidth > 959 ? "transparent" : "white"}
                     justIcon={window.innerWidth > 959}
@@ -70,7 +69,6 @@ class HeaderLinks extends React.Component {
                         <p className={classes.linkText}>Dashboard</p>
                     </Hidden>
                 </Button>
-                </a>
 
                 <div className={classes.manager}>
                     <Button//Notification rechts oben
@@ -86,7 +84,7 @@ class HeaderLinks extends React.Component {
                         className={classes.buttonLink}
                     >
                         <Notifications className={classes.icons}/>
-                        <span className={classes.notifications}>666</span>
+                        <span className={classes.notifications}>5</span>
                         <Hidden mdUp implementation="css">
                             <p onClick={this.handleClick} className={classes.linkText}>
                                 Notification
@@ -117,7 +115,6 @@ class HeaderLinks extends React.Component {
                                 <Paper>
                                     <ClickAwayListener onClickAway={this.handleClose}>
                                         <MenuList role="menu">
-                                            <a href={"/Notifications/Notifications.jsx"}> {/** Link zu den jeweiligen Seiten**/}
                                             <MenuItem
                                                 onClick={this.handleClose}
                                                 className={classes.dropdownItem}
@@ -148,7 +145,6 @@ class HeaderLinks extends React.Component {
                                             >
                                                 Another One
                                             </MenuItem>
-                                            </a>
                                         </MenuList>
                                     </ClickAwayListener>
                                 </Paper>
@@ -156,12 +152,11 @@ class HeaderLinks extends React.Component {
                         )}
                     </Poppers>
                 </div>
-                <a href={"/UserProfile/UserProfile.jsx"}>
                 <Button //profile button oben rechts
                     color={window.innerWidth > 959 ? "transparent" : "white"}
                     justIcon={window.innerWidth > 959}
                     simple={!(window.innerWidth > 959)}
-                    aria-label="UserProfile"
+                    aria-label="Person"
                     className={classes.buttonLink}
                 >
                     <Person className={classes.icons}/>
@@ -169,7 +164,6 @@ class HeaderLinks extends React.Component {
                         <p className={classes.linkText}>Profile</p>
                     </Hidden>
                 </Button>
-                </a>
             </div>
         );
     }
