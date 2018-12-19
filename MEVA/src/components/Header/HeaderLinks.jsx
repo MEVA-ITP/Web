@@ -20,7 +20,6 @@ import Button from "components/CustomButtons/Button.jsx";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 import headerLinksStyle from "assets/jss/material-dashboard-react/components/headerLinksStyle.jsx";
-import SimpleModal from "../../components/Header/SimpleModal.jsx";
 
 class HeaderLinks extends React.Component {
     state = {

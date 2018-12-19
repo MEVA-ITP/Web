@@ -34,6 +34,18 @@ function Icons(props) {
                                 ["Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
                                 ["Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
                                 ["Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                ["Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
                                 ["Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018"]
                             ]}
                         />

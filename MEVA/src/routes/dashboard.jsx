@@ -7,6 +7,11 @@ import BubbleChart from "@material-ui/icons/BubbleChart";
 import LocationOn from "@material-ui/icons/LocationOn";
 import Notifications from "@material-ui/icons/Notifications";
 import Unarchive from "@material-ui/icons/Unarchive";
+import camera_alt from "@material-ui/icons/CameraAlt";
+import devoleper_board from "@material-ui/icons/DeveloperBoard";
+import vertical_split from "@material-ui/icons/VerticalSplit";
+import attach_money from "@material-ui/icons/AttachMoney";
+import notifications_active from "@material-ui/icons/NotificationsActive";
 // core components/views
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
@@ -14,6 +19,8 @@ import Hardware from "views/Hardware/Hardware.jsx";
 import Bundles from "views/Bundles/Bundles.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
+import admincmdpage from "views/AdminConsole/admincmd.jsx";
+
 
 const dashboardRoutes = [
     {
@@ -34,28 +41,35 @@ const dashboardRoutes = [
         path: "/Hardware",
         sidebarName: "Hardware",
         navbarName: "Hardware",
-        icon: "content_paste",
+        icon: "camera_alt",
         component: Hardware
     },
     {
         path: "/Bundles",
         sidebarName: "Bundles",
         navbarName: "Bundles",
-        icon: LibraryBooks,
+        icon: "vertical_split",
         component: Bundles
     },
     {
-        path: "/icons",
+        path: "/icon",
         sidebarName: "Loaned Products",
         navbarName: "Loaned Products",
-        icon: BubbleChart,
+        icon: "attach_money",
         component: Icons
+    },
+    {
+        path: "/AdminConsole",
+        sidebarName: "AdminCMD",
+        navbarName: "AdminCMD",
+        icon: "developer_board",
+        component: admincmdpage
     },
     {
         path: "/notifications",
         sidebarName: "Notifications",
         navbarName: "Notifications",
-        icon: Notifications,
+        icon: "notifications_active",
         component: NotificationsPage
     },
     {redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect"}
