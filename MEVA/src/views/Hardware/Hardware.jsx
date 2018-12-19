@@ -14,6 +14,7 @@ import Button from '@material-ui/core/Button';
 // Popup Window
 import SimpleModal from "../Popup/SimpleModal.jsx";
 
+
 const styles = {
     cardCategoryWhite: {
         "&,& a,& a:hover,& a:focus": {
@@ -46,6 +47,7 @@ const styles = {
 
 function Hardware(props) {
     const {classes} = props;
+
     return (
         <GridContainer classes={{container: classes.gridContainer}}>
             <GridItem xs={12} sm={6} md={4}>
