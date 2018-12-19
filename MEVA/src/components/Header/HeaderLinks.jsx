@@ -63,6 +63,7 @@ class HeaderLinks extends React.Component {
                     simple={!(window.innerWidth > 959)}
                     aria-label="Dashboard"
                     className={classes.buttonLink}
+                    href = {"/Dashboard"}
                 >
                     <Dashboard className={classes.icons}/>
                     <Hidden mdUp implementation="css">
@@ -82,6 +83,7 @@ class HeaderLinks extends React.Component {
                         aria-haspopup="true"
                         onClick={this.handleToggle}
                         className={classes.buttonLink}
+                        href = {"/notification"}
                     >
                         <Notifications className={classes.icons}/>
                         <span className={classes.notifications}>5</span>
@@ -158,6 +160,7 @@ class HeaderLinks extends React.Component {
                     simple={!(window.innerWidth > 959)}
                     aria-label="Person"
                     className={classes.buttonLink}
+                    href = {"/user"}
                 >
                     <Person className={classes.icons}/>
                     <Hidden mdUp implementation="css">
