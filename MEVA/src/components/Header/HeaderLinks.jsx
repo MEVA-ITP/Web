@@ -83,7 +83,7 @@ class HeaderLinks extends React.Component {
                         aria-haspopup="true"
                         onClick={this.handleToggle}
                         className={classes.buttonLink}
-                        href = {"/notification"}
+                        href = {"/notifications"}
                     >
                         <Notifications className={classes.icons}/>
                         <span className={classes.notifications}>5</span>
