@@ -20,6 +20,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 import headerLinksStyle from "assets/jss/material-dashboard-react/components/headerLinksStyle.jsx";
+import SimpleModal from "../../components/Header/SimpleModal.jsx";
 
 class HeaderLinks extends React.Component {
     state = {
@@ -71,13 +72,12 @@ class HeaderLinks extends React.Component {
                         <p className={classes.linkText}>Dashboard</p>
                     </Hidden>
                 </Button>
-                <Button // Dashboard logo oben recht
+                <Button // Warenkorb logo oben recht
                     color={window.innerWidth > 959 ? "transparent" : "white"}
                     justIcon={window.innerWidth > 959}
                     simple={!(window.innerWidth > 959)}
                     aria-label="Dashboard"
                     className={classes.buttonLink}
-                    href = {"/Dashboard"}
                 >
                     <AddShoppingCartIcon className={classes.icons}/>
                     <Hidden mdUp implementation="css">
@@ -98,7 +98,6 @@ class HeaderLinks extends React.Component {
                         aria-haspopup="true"
                         onClick={this.handleToggle}
                         className={classes.buttonLink}
-                        href = {"/notifications"}
                     >
                         <Notifications className={classes.icons}/>
                         <span className={classes.notifications}>5</span>
@@ -128,39 +127,40 @@ class HeaderLinks extends React.Component {
                                     transformOrigin:
                                         placement === "bottom" ? "center top" : "center bottom"
                                 }}
+
                             >
-                                <Paper>
+                                <Paper >
                                     <ClickAwayListener onClickAway={this.handleClose}>
                                         <MenuList role="menu">
                                             <MenuItem
                                                 onClick={this.handleClose}
                                                 className={classes.dropdownItem}
                                             >
-                                                Mike John responded to your email
+                                                <a style={{color:"black"}} href="/notifications"> Mike John responded to your email </a>
                                             </MenuItem>
                                             <MenuItem
                                                 onClick={this.handleClose}
                                                 className={classes.dropdownItem}
                                             >
-                                                You have 5 new tasks
+                                                <a style={{color:"black"}} href="/notifications">You have 5 new tasks</a>
                                             </MenuItem>
                                             <MenuItem
                                                 onClick={this.handleClose}
                                                 className={classes.dropdownItem}
                                             >
-                                                You're now friend with Andrew
+                                                <a style={{color:"black"}} href="/notifications">You're now friend with Andrew</a>
                                             </MenuItem>
                                             <MenuItem
                                                 onClick={this.handleClose}
                                                 className={classes.dropdownItem}
                                             >
-                                                Another Notification
+                                                <a style={{color:"black"}} href="/notifications">Another Notification</a>
                                             </MenuItem>
                                             <MenuItem
                                                 onClick={this.handleClose}
                                                 className={classes.dropdownItem}
                                             >
-                                                Another One
+                                                <a style={{color:"black"}} href="/notifications">Another One</a>
                                             </MenuItem>
                                         </MenuList>
                                     </ClickAwayListener>
