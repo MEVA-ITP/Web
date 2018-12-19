@@ -102,7 +102,7 @@ function UserProfile(props) {
                     </Card>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
-                    <Card profile style={{top:"10%"}}>
+                    <Card profile style={{top:"8%"}}>
                         <CardAvatar profile >
                             <a href="#pablo" onClick={e => e.preventDefault()}>
                                 <img src={avatar} alt="..."/>

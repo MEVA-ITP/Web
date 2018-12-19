@@ -48,8 +48,8 @@ class SimpleModal extends React.Component {
         const { classes } = this.props;
 
         return (
-            <div style={{paddingBottom: '4%'}}>
-                <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}} variant="contained" size="large" color="primary" onClick={this.handleOpen}>Reservieren</Button>
+            <div>
+                <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '25%'}} variant="contained" size="large" color="primary" onClick={this.handleOpen}>Reservieren</Button>
                 <Modal
                     aria-labelledby="simple-modal-title"
                     aria-describedby="simple-modal-description"

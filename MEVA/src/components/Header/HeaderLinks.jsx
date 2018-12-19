@@ -70,6 +70,20 @@ class HeaderLinks extends React.Component {
                         <p className={classes.linkText}>Dashboard</p>
                     </Hidden>
                 </Button>
+                <Button // Dashboard logo oben recht
+                    color={window.innerWidth > 959 ? "transparent" : "white"}
+                    justIcon={window.innerWidth > 959}
+                    simple={!(window.innerWidth > 959)}
+                    aria-label="Dashboard"
+                    className={classes.buttonLink}
+                    href = {"/Dashboard"}
+                >
+                    <Dashboard className={classes.icons}/>
+                    <Hidden mdUp implementation="css">
+                        <p className={classes.linkText}>Dashboard</p>
+                    </Hidden>
+                </Button>
+
 
                 <div className={classes.manager}>
                     <Button//Notification rechts oben

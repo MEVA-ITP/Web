@@ -62,14 +62,7 @@ function Hardware(props) {
                         <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
                     </CardBody>
                     <div style={{paddingLeft: '5%', paddingBottom: '4%'}}>
-                        <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginRight: '2%'}}
-                                variant="contained" size="large" color="primary" className={classes.button}>
-                            Reservieren
-                        </Button>
-                        <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}}
-                                variant="contained" size="large" color="primary" className={classes.button}>
-                            Auswählen
-                        </Button>
+                        <SimpleModal  SimpleModal={props.SimpleModal} />
                     </div>
                     <CardFooter chart>
                     </CardFooter>
@@ -91,10 +84,6 @@ function Hardware(props) {
                     </CardBody>
                     <div style={{paddingLeft: '5%', paddingBottom: '4%'}}>
                         <SimpleModal  SimpleModal={props.SimpleModal} />
-                        <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}}
-                                variant="contained" size="large" color="primary" className={classes.button}>
-                            Auswählen
-                        </Button>
                     </div>
                     <CardFooter chart>
                     </CardFooter>
@@ -115,14 +104,7 @@ function Hardware(props) {
                         <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
                     </CardBody>
                     <div style={{paddingLeft: '5%', paddingBottom: '4%'}}>
-                        <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginRight: '2%'}}
-                                variant="contained" size="large" color="primary" className={classes.button}>
-                            Reservierung
-                        </Button>
-                        <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}}
-                                variant="contained" size="large" color="primary" className={classes.button}>
-                            Auswählen
-                        </Button>
+                        <SimpleModal  SimpleModal={props.SimpleModal} />
                     </div>
                     <CardFooter chart>
                     </CardFooter>
@@ -143,14 +125,7 @@ function Hardware(props) {
                         <a href="https://cdn.billiger.com/dynimg/BeJSIoTIRwE6Ls_wbObPEXt4H9rycHjeBa9LTdXG2DAE0q0O1YuZqiNdvIY_Nfu9H6xxgR7bS-w5JXuNPDAA5g/Canon-PIXMA-MX925-Bedienungsanleitung-2efef0.pdf">Benutzerhandbuch</a>
                     </CardBody>
                     <div style={{paddingLeft: '5%', paddingBottom: '4%'}}>
-                        <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginRight: '2%'}}
-                                variant="contained" size="large" color="primary" className={classes.button}>
-                            Reservierung
-                        </Button>
-                        <Button style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '2%'}}
-                                variant="contained" size="large" color="primary" className={classes.button}>
-                            Auswählen
-                        </Button>
+                        <SimpleModal  SimpleModal={props.SimpleModal} />
                     </div>
                     <CardFooter chart>
                     </CardFooter>
