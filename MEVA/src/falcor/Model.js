@@ -67,7 +67,8 @@ export const model = new falcor.Model({
 })
 
 async function x() {
-    console.log("MODEL TEST: ", await model.get("devices[0]['name']"))
+    console.log("MODEL TEST: ", await model.get("devices[0..2]['id', 'name', 'image']"))
+    console.log("MODEL TEST: ", await model.get("devicesById['5c10c9d99bfced350ccce888']['id', 'name', 'image']"))
 }
 
 x()
