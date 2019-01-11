@@ -16,8 +16,8 @@ import style from './style.css';
 
 const styles = theme => ({
     main: {
-        width: 'auto',
-        display: 'block', // Fix IE 11 issue.
+        width: '100%',
+        display: 'absolute', // Fix IE 11 issue.
         marginLeft: theme.spacing.unit * 3,
         marginRight: theme.spacing.unit * 3,
         [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
@@ -50,7 +50,7 @@ function SignIn(props) {
     const { classes } = props;
 
     return (
-        <div className={"body"} style={{top:"-500px"}}>
+            <body>
             <main className={classes.main}>
                 <CssBaseline />
                 <Paper className={classes.paper} >
@@ -85,7 +85,7 @@ function SignIn(props) {
                     </form>
                 </Paper>
             </main>
-        </div>
+            </body>
     );
 }
 
