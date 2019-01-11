@@ -29,26 +29,26 @@ function Icons(props) {
                     <CardBody>
                         <Table
                             tableHeaderColor="primary"
-                            tableHead={["Vorname", "Nachname", "Email", "Klasse", "Verliehener Produkt", "Rückgabe am",""]}
+                            tableHead={["","Vorname", "Nachname", "Email", "Klasse", "Verliehener Produkt", "Rückgabe am"]}
                             tableData={[
-                                ["Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018", <PopUpIcon  PopUpIcon={props.PopUpIcon} />],
-                                ["Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018",<PopUpIcon  PopUpIcon={props.PopUpIcon} />],
-                                ["Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018",<PopUpIcon  PopUpIcon={props.PopUpIcon} />],
-                                ["Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018",<PopUpIcon  PopUpIcon={props.PopUpIcon} />],
-                                ["Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"],
-                                ["Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018","amk hier soll icon hin"]
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Christian", "Krebich", "ckreibich@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Semir", "Alagic", "salagic@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Viktor", "Mandelbauer", "vmandelbauer@student.tgm.ac.at", "4BHIT", "Kamera 365XYZ", "22.11.2018"],
+                                [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Yasin", "Gomaa", "ygomaa@student.tgm.ac.at ", "4AHIT", "Kamera 365XYZ", "22.11.2018"]
                             ]}
                         />
                     </CardBody>
