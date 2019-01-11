@@ -4,15 +4,13 @@ import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import FormControl from '@material-ui/core/FormControl';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import LockIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
-import style from './style.css';
+import {Redirect} from "react-router-dom";
 
 const styles = theme => ({
     main: {
@@ -28,6 +26,7 @@ const styles = theme => ({
     },
     paper: {
         marginTop: theme.spacing.unit * 8,
+        marginBottom: theme.spacing.unit * 8,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -46,47 +45,116 @@ const styles = theme => ({
     },
 });
 
-function SignIn(props) {
-    const { classes } = props;
+class SignIn extends React.Component {
 
-    return (
-        <div className={"body"}>
-            <main className={classes.main}>
-                <CssBaseline />
-                <Paper className={classes.paper} >
-                    <Avatar className={classes.avatar}>
-                        <LockIcon />
-                    </Avatar>
-                    <Typography component="h1" variant="h5">
-                        Sign in
-                    </Typography>
-                    <form className={classes.form} action={"/Dashboard"} method={'get'}>
-                        <FormControl margin="normal" required fullWidth>
-                            <InputLabel htmlFor="email">Email Address</InputLabel>
-                            <Input id="email" name="email" autoComplete="email" autoFocus />
-                        </FormControl>
-                        <FormControl margin="normal" required fullWidth>
-                            <InputLabel htmlFor="password">Password</InputLabel>
-                            <Input name="password" type="password" id="password" autoComplete="current-password" />
-                        </FormControl>
-                        <FormControlLabel
-                            control={<Checkbox value="remember" color="primary" />}
-                            label="Remember me"
-                        />
-                        <Button
-                            type="submit"
-                            fullWidth
-                            variant="contained"
-                            color="primary"
-                            className={classes.submit}
-                        >
+    constructor(props) {
+        super(props)
+        this.state = {
+            email: '',
+            password: '',
+            tryLogin: false,
+            error: false,
+            redirect: false,
+        }
+    }
+
+    updateState = (prop) => {
+        return (event) => {
+            this.setState({
+                [prop]: event.target.value,
+            })
+        }
+    }
+
+    login = async (e) => {
+        e.preventDefault()
+
+        await this.setState({tryLogin: true, error: false})
+        const {email, password} = this.state
+
+        try {
+            const gotten = await (await fetch('./login', {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({email, password})
+            })).json()
+
+            if (gotten.ok === true) {
+                this.setState({redirect: './dashboard'})
+                return
+            }
+
+            this.setState({error: gotten.error, password: '', tryLogin: false})
+        } catch (e) {
+            this.setState({error: "There was an error contacting the server.", password: '', tryLogin: false})
+        }
+    }
+
+    render = () => {
+        const {classes} = this.props;
+
+        return (
+            <div className={"body"}>
+                {this.state.redirect && (
+                    <Redirect push to={this.state.redirect}/>
+                )}
+                <main className={classes.main}>
+                    <CssBaseline/>
+                    <Paper className={classes.paper}>
+                        <Avatar className={classes.avatar}>
+                            <LockIcon/>
+                        </Avatar>
+                        <Typography component="h1" variant="h5">
                             Sign in
-                        </Button>
-                    </form>
-                </Paper>
-            </main>
-        </div>
-    );
+                        </Typography>
+                        <form className={classes.form} onSubmit={this.login}>
+                            <FormControl margin="normal" required fullWidth>
+                                <InputLabel htmlFor="email">Email Address</InputLabel>
+                                <Input
+                                    id="email"
+                                    name="email"
+                                    autoComplete="email"
+                                    autoFocus
+                                    onChange={this.updateState("email")}
+                                    value={this.state.email}
+                                    disabled={this.state.tryLogin}
+                                />
+                            </FormControl>
+                            <FormControl margin="normal" required fullWidth>
+                                <InputLabel htmlFor="password">Password</InputLabel>
+                                <Input
+                                    name="password"
+                                    type="password"
+                                    id="password"
+                                    autoComplete="current-password"
+                                    onChange={this.updateState("password")}
+                                    value={this.state.password}
+                                    disabled={this.state.tryLogin}
+                                />
+                            </FormControl>
+                            {this.state.error && (
+                                <Typography color={"error"}>
+                                    {this.state.error}
+                                </Typography>)
+                            }
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                color="primary"
+                                className={classes.submit}
+                                disabled={this.state.tryLogin}
+                            >
+                                Sign in
+                            </Button>
+                        </form>
+                    </Paper>
+                </main>
+            </div>
+        );
+    }
 }
 
 SignIn.propTypes = {
