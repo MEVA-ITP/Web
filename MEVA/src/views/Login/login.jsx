@@ -50,7 +50,11 @@ function SignIn(props) {
     const { classes } = props;
 
     return (
+<<<<<<< HEAD
             <body>
+=======
+        <div className={"body"}>
+>>>>>>> 3cd3b3e4991f2b5e9d4bd42cb444395bf363b203
             <main className={classes.main}>
                 <CssBaseline />
                 <Paper className={classes.paper} >
@@ -85,7 +89,11 @@ function SignIn(props) {
                     </form>
                 </Paper>
             </main>
+<<<<<<< HEAD
             </body>
+=======
+        </div>
+>>>>>>> 3cd3b3e4991f2b5e9d4bd42cb444395bf363b203
     );
 }
 
