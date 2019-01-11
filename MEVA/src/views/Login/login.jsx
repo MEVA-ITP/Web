@@ -50,7 +50,7 @@ function SignIn(props) {
     const { classes } = props;
 
     return (
-            <body>
+        <div className={"body"}>
             <main className={classes.main}>
                 <CssBaseline />
                 <Paper className={classes.paper} >
@@ -85,7 +85,7 @@ function SignIn(props) {
                     </form>
                 </Paper>
             </main>
-            </body>
+        </div>
     );
 }
 
