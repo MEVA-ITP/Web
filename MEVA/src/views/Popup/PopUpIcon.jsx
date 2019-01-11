@@ -49,7 +49,7 @@ class SimpleModal extends React.Component {
 
         return (
             <div>
-                <icon style={{width: '45%', height: '45%', backgroundColor: '#00BCD4', marginLeft: '25%'}} variant="contained" size="large" color="primary" onClick={this.handleOpen}>Anzeige</icon>
+                <icon variant="contained" size="large" color="primary" onClick={this.handleOpen}>Anzeige</icon>
                 <Modal
                     aria-labelledby="simple-modal-title"
                     aria-describedby="simple-modal-description"
