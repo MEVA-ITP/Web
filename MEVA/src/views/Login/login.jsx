@@ -73,7 +73,7 @@ class SignIn extends React.Component {
         const {email, password} = this.state
 
         try {
-            const gotten = await (await fetch('./login', {
+            const gotten = await (await fetch('https://api.meva.thekingdave.com/login', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
