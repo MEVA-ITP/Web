@@ -11,6 +11,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
 import {Redirect} from "react-router-dom";
+import style from './style.css';
 
 const styles = theme => ({
     main: {
