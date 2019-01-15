@@ -2,13 +2,8 @@
 import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
 // import ContentPaste from "@material-ui/icons/ContentPaste";
-import LibraryBooks from "@material-ui/icons/LibraryBooks";
-import BubbleChart from "@material-ui/icons/BubbleChart";
-import LocationOn from "@material-ui/icons/LocationOn";
 import Notifications from "@material-ui/icons/Notifications";
-import Unarchive from "@material-ui/icons/Unarchive";
 import camera_alt from "@material-ui/icons/CameraAlt";
-import devoleper_board from "@material-ui/icons/DeveloperBoard";
 import vertical_split from "@material-ui/icons/VerticalSplit";
 import attach_money from "@material-ui/icons/AttachMoney";
 import notifications_active from "@material-ui/icons/NotificationsActive";
