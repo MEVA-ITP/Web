@@ -14,7 +14,7 @@ import iconsStyle from "assets/jss/material-dashboard-react/views/iconsStyle.jsx
 import SimpleModal from "../Popup/SimpleModal";
 import PopUpIcon from "../Popup/PopUpIcon";
 
-function Icons(props) {
+function Loanedproducts(props) {
     const {classes} = props;
     return (
         <GridContainer>
@@ -58,8 +58,8 @@ function Icons(props) {
     );
 }
 
-Icons.propTypes = {
+Loanedproducts.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default withStyles(iconsStyle)(Icons);
+export default withStyles(iconsStyle)(Loanedproducts);
