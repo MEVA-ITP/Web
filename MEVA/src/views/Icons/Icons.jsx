@@ -14,7 +14,7 @@ import iconsStyle from "assets/jss/material-dashboard-react/views/iconsStyle.jsx
 import SimpleModal from "../Popup/SimpleModal";
 import PopUpIcon from "../Popup/PopUpIcon";
 
-function Loanedproducts(props) {
+function Icons(props) {
     const {classes} = props;
     return (
         <GridContainer>
@@ -29,7 +29,7 @@ function Loanedproducts(props) {
                     <CardBody>
                         <Table
                             tableHeaderColor="primary"
-                            tableHead={["Mehr ...","Vorname", "Nachname", "Email", "Klasse", "Verliehener Produkt", "Rückgabe am"]}
+                            tableHead={["","Vorname", "Nachname", "Email", "Klasse", "Verliehener Produkt", "Rückgabe am"]}
                             tableData={[
                                 [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
                                 [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
@@ -58,8 +58,8 @@ function Loanedproducts(props) {
     );
 }
 
-Loanedproducts.propTypes = {
+Icons.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default withStyles(iconsStyle)(Loanedproducts);
+export default withStyles(iconsStyle)(Icons);
