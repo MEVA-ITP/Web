@@ -29,7 +29,7 @@ function Icons(props) {
                     <CardBody>
                         <Table
                             tableHeaderColor="primary"
-                            tableHead={["","Vorname", "Nachname", "Email", "Klasse", "Verliehener Produkt", "Rückgabe am"]}
+                            tableHead={["Mehr ...","Vorname", "Nachname", "Email", "Klasse", "Verliehener Produkt", "Rückgabe am"]}
                             tableData={[
                                 [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Semih", "Cakir", "scakir@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
                                 [<PopUpIcon  PopUpIcon={props.PopUpIcon} />,"Ulrich", "Frühstück", "ufruestueck@student.tgm.ac.at", "4AHIT", "Kamera 365XYZ", "22.11.2018"],
