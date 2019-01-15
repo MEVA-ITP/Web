@@ -13,6 +13,7 @@ import CardFooter from "components/Card/CardFooter.jsx";
 import Button from '@material-ui/core/Button';
 // Popup Window
 import SimpleModal from "../Popup/SimpleModal.jsx";
+import Model from "../../falcor/Model";
 
 
     const styles = {
@@ -47,8 +48,8 @@ import SimpleModal from "../Popup/SimpleModal.jsx";
 
     function Hardware(props) {
         const {classes} = props;
-
         return (
+
             <GridContainer classes={{container: classes.gridContainer}}>
                 <GridItem xs={12} sm={6} md={4}>
                     <Card chart>
@@ -56,7 +57,7 @@ import SimpleModal from "../Popup/SimpleModal.jsx";
                             <img src={require('../../assets/img/druckerxy.jpg')} width={"100%"} height={"100%"} mode="fit"/>
                         </CardHeader>
                         <CardBody>
-                            <h4 className={classes.cardTitle}>Produkt XY</h4>
+                            <h4 className={classes.cardTitle}></h4>
                             <p><i style={{textAlign: 'left'}}>Raum:</i><i style={{textAlign: 'right'}}> Fotolabor </i></p>
                             <i>Inventarnummer:</i><i> 3758k 648</i>
                             <p>Status:</p><p> Verfügbar </p>

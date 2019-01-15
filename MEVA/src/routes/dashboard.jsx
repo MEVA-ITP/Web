@@ -17,7 +17,7 @@ import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import Hardware from "views/Hardware/Hardware.jsx";
 import Bundles from "views/Bundles/Bundles.jsx";
-import Icons from "views/Icons/Icons.jsx";
+import Icons from "views/LoandedProducts/LoandedProducts.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import admincmdpage from "views/AdminConsole/admincmd.jsx";
 
