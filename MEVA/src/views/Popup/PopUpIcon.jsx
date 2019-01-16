@@ -8,12 +8,12 @@ import red from '@material-ui/core/colors/red';
 import Icon from '@material-ui/core/Icon';
 
 function getModalStyle() {
-    const top = 55
-    const left = 55
+    const top = '55%'
+    const left = '55%'
 
     return {
-        top: `54.6%`,
-        left: `62.5%`,
+        top: `5%`,
+        left: `10%`,
         transform: `translate(-${top}%, -${left}%)`,
     };
 }
