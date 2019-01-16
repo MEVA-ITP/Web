@@ -53,7 +53,7 @@ class PopUpIcon extends React.Component {
             <div>
             <div className={classes.root}>
                 <Button onClick={this.handleOpen}>
-                <Icon className={classes.icon} onClick={() => this.handleOpen}>images outline</Icon></Button>
+                <Icon className={classes.icon} onClick={() => this.handleOpen}>image</Icon></Button>
             </div>
 
             <Modal
@@ -63,6 +63,8 @@ class PopUpIcon extends React.Component {
                 onClose={this.handleClose}
             >
                 <div style={getModalStyle()} className={classes.paper}>
+                    <Button onClick={this.handleOpen} >
+                        <Icon className={classes.icon} onClick={() => this.handleClose()}>compress</Icon></Button>
                     <Typography variant="h6" id="modal-title">
                     Reservierung
                     </Typography>
