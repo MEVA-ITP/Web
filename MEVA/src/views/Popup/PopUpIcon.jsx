@@ -53,7 +53,7 @@ class PopUpIcon extends React.Component {
             <div>
             <div className={classes.root}>
                 <Button onClick={this.handleOpen}>
-                <Icon className={classes.icon} onClick={() => this.handleOpen}> delete </Icon></Button>
+                <Icon className={classes.icon} onClick={() => this.handleOpen}>images outline</Icon></Button>
             </div>
 
             <Modal
