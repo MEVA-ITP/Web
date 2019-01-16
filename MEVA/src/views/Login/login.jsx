@@ -110,7 +110,7 @@ class SignIn extends React.Component {
                                 <LockIcon/>
                             </Avatar>
                             <Typography component="h1" variant="h5">
-                                Sign in
+                                Login
                             </Typography>
                             <form className={classes.form} onSubmit={this.login}>
                                 <FormControl margin="normal" required fullWidth>
@@ -151,7 +151,7 @@ class SignIn extends React.Component {
                                     className={classes.submit}
                                     disabled={this.state.tryLogin}
                                 >
-                                    Sign In
+                                    Login
                                 </Button>
                                 <Button
                                     onClick={() => {this.setState({showState: 'register'})}}
@@ -244,7 +244,7 @@ class SignIn extends React.Component {
                                     variant="contained"
                                     color="primary"
                                 >
-                                    Register
+                                    Sign Up
                                 </Button>
                             </form>
                         </Paper>
