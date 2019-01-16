@@ -14,12 +14,14 @@ import Person from "@material-ui/icons/Person";
 import Notifications from "@material-ui/icons/Notifications";
 import Dashboard from "@material-ui/icons/Dashboard";
 import Search from "@material-ui/icons/Search";
+import Logout from "@material-ui/icons/KeyboardTab";
 // core components
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 import headerLinksStyle from "assets/jss/material-dashboard-react/components/headerLinksStyle.jsx";
+import Icons from "../../views/Icons/Icons";
 
 class HeaderLinks extends React.Component {
     state = {
@@ -83,20 +85,6 @@ class HeaderLinks extends React.Component {
                         <p className={classes.linkText}>Dashboard</p>
                     </Hidden>
                 </Button>
-                <Button // logout
-                    color={window.innerWidth > 959 ? "transparent" : "white"}
-                    justIcon={window.innerWidth > 959}
-                    simple={!(window.innerWidth > 959)}
-                    aria-label="Login"
-                    className={classes.buttonLink}
-                    href = {"../"}
-                >
-                    <Dashboard className={classes.icons}/>
-                    <Hidden mdUp implementation="css">
-                        <p className={classes.linkText}>Dashboard</p>
-                    </Hidden>
-                </Button>
-
 
                 <div className={classes.manager}>
                     <Button//Notification rechts oben
@@ -192,6 +180,19 @@ class HeaderLinks extends React.Component {
                     <Person className={classes.icons}/>
                     <Hidden mdUp implementation="css">
                         <p className={classes.linkText}>Profile</p>
+                    </Hidden>
+                </Button>
+                <Button // logout
+                    color={window.innerWidth > 959 ? "transparent" : "white"}
+                    justIcon={window.innerWidth > 959}
+                    simple={!(window.innerWidth > 959)}
+                    aria-label="Login"
+                    className={classes.buttonLink}
+                    href = {"../"}
+                >
+                    <Logout className={classes.icons}/>
+                    <Hidden mdUp implementation="css">
+                        <p className={classes.linkText}>LogOUT</p>
                     </Hidden>
                 </Button>
             </div>
