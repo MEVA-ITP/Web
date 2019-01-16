@@ -15,12 +15,12 @@ import style from './style.css';
 
 const styles = theme => ({
     main: {
-        width: '100%',
+        width: '95%',
         display: 'absolute', // Fix IE 11 issue.
-        marginLeft: theme.spacing.unit * 3,
-        marginRight: theme.spacing.unit * 3,
+        marginLeft: theme.spacing.unit,
+        marginRight: theme.spacing.unit,
         [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
-            width: 400,
+            width: '30%',
             marginLeft: 'auto',
             marginRight: 'auto',
         },
@@ -31,7 +31,6 @@ const styles = theme => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-
         padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
     },
     avatar: {
@@ -57,6 +56,7 @@ class SignIn extends React.Component {
             tryLogin: false,
             error: false,
             redirect: false,
+            showState: 'login',
         }
     }
 
@@ -98,62 +98,158 @@ class SignIn extends React.Component {
         const {classes} = this.props;
 
         return (
-            <div className={"body"}>
-                {this.state.redirect && (
-                    <Redirect push to={this.state.redirect}/>
-                )}
-                <main className={classes.main}>
-                    <CssBaseline/>
-                    <Paper className={classes.paper}>
-                        <Avatar className={classes.avatar}>
-                            <LockIcon/>
-                        </Avatar>
-                        <Typography component="h1" variant="h5">
-                            Sign in
-                        </Typography>
-                        <form className={classes.form} onSubmit={this.login}>
-                            <FormControl margin="normal" required fullWidth>
-                                <InputLabel htmlFor="email">Email Address</InputLabel>
-                                <Input
-                                    id="email"
-                                    name="email"
-                                    autoComplete="email"
-                                    autoFocus
-                                    onChange={this.updateState("email")}
-                                    value={this.state.email}
-                                    disabled={this.state.tryLogin}
-                                />
-                            </FormControl>
-                            <FormControl margin="normal" required fullWidth>
-                                <InputLabel htmlFor="password">Password</InputLabel>
-                                <Input
-                                    name="password"
-                                    type="password"
-                                    id="password"
-                                    autoComplete="current-password"
-                                    onChange={this.updateState("password")}
-                                    value={this.state.password}
-                                    disabled={this.state.tryLogin}
-                                />
-                            </FormControl>
-                            {this.state.error && (
-                                <Typography color={"error"}>
-                                    {this.state.error}
-                                </Typography>)
-                            }
-                            <Button
-                                type="submit"
-                                fullWidth
-                                variant="contained"
-                                color="primary"
-                                className={classes.submit}
-                                disabled={this.state.tryLogin}
-                            >
+            <div>
+                <div className={"body"}>
+                    {this.state.redirect && (
+                        <Redirect push to={this.state.redirect}/>
+                    )}
+                    {this.state.showState === 'login' && <main className={classes.main}>
+                        <CssBaseline/>
+                        <Paper className={classes.paper}>
+                            <Avatar className={classes.avatar}>
+                                <LockIcon/>
+                            </Avatar>
+                            <Typography component="h1" variant="h5">
                                 Sign in
-                            </Button>
-                        </form>
-                    </Paper>
-                </main>
+                            </Typography>
+                            <form className={classes.form} onSubmit={this.login}>
+                                <FormControl margin="normal" required fullWidth>
+                                    <InputLabel htmlFor="email">Email Address</InputLabel>
+                                    <Input
+                                        id="email"
+                                        name="email"
+                                        autoComplete="email"
+                                        autoFocus
+                                        onChange={this.updateState("email")}
+                                        value={this.state.email}
+                                        disabled={this.state.tryLogin}
+                                    />
+                                </FormControl>
+                                <FormControl margin="normal" required fullWidth>
+                                    <InputLabel htmlFor="password">Password</InputLabel>
+                                    <Input
+                                        name="password"
+                                        type="password"
+                                        id="password"
+                                        autoComplete="current-password"
+                                        onChange={this.updateState("password")}
+                                        value={this.state.password}
+                                        disabled={this.state.tryLogin}
+                                    />
+                                </FormControl>
+                                {this.state.error && (
+                                    <Typography color={"error"}>
+                                        {this.state.error}
+                                    </Typography>)
+                                }
+                                <Button
+                                    style={{marginBottom: "15px"}}
+                                    type="submit"
+                                    fullWidth
+                                    variant="contained"
+                                    color="primary"
+                                    className={classes.submit}
+                                    disabled={this.state.tryLogin}
+                                >
+                                    Sign In
+                                </Button>
+                                <Button
+                                    onClick={() => {this.setState({showState: 'register'})}}
+                                    type="button"
+                                    fullWidth
+                                    variant="contained"
+                                    color="primary"
+                                >
+                                    Sign Up
+                                </Button>
+                            </form>
+                        </Paper>
+                    </main>}
+                    {this.state.showState === 'register' && <main className={classes.main}>
+                        <CssBaseline/>
+                        <Paper className={classes.paper}>
+                            <Avatar className={classes.avatar}>
+                                <LockIcon/>
+                            </Avatar>
+                            <Typography component="h1" variant="h5">
+                                Sign Up
+                            </Typography>
+                            <form className={classes.form} onSubmit={this.login}>
+                                <FormControl margin="normal" required fullWidth>
+                                    <InputLabel htmlFor="fname">Firstname </InputLabel>
+                                    <Input
+                                        id="fname"
+                                        name="fname"
+                                        autoComplete="fname"
+
+                                    />
+                                </FormControl>
+                                <FormControl margin="normal" required fullWidth>
+                                    <InputLabel htmlFor="lname">Lastname </InputLabel>
+                                    <Input
+                                        id="lname"
+                                        name="lname"
+                                        autoComplete="lname"
+
+                                    />
+                                </FormControl>
+                                <FormControl margin="normal" required fullWidth>
+                                    <InputLabel htmlFor="email">Email </InputLabel>
+                                    <Input
+                                        id="email"
+                                        name="email"
+                                        autoComplete="email"
+
+                                    />
+                                </FormControl>
+                                <FormControl margin="normal" required fullWidth>
+                                    <InputLabel htmlFor="password">Password</InputLabel>
+                                    <Input
+                                        name="password"
+                                        type="password"
+                                        id="password"
+                                        autoComplete="current-password"
+                                    />
+                                </FormControl>
+                                <FormControl margin="normal" required fullWidth>
+                                    <InputLabel htmlFor="telnr">Telephone-Number </InputLabel>
+                                    <Input
+                                        id="phone"
+                                        name="phone"
+                                        autoComplete="phone"
+
+                                    />
+                                </FormControl>
+                                {this.state.error && (
+                                    <Typography color={"error"}>
+                                        {this.state.error}
+                                    </Typography>)
+                                }
+                                <Button
+                                    style={{marginBottom: "15px"}}
+                                    onClick={() => {this.setState({showState: 'login'})}}
+                                    type="submit"
+                                    fullWidth
+                                    variant="contained"
+                                    color="primary"
+                                    className={classes.submit}
+                                    disabled={this.state.tryLogin}
+                                >
+                                    Login
+                                </Button>
+                                <Button
+
+                                    type="button"
+                                    fullWidth
+                                    variant="contained"
+                                    color="primary"
+                                >
+                                    Register
+                                </Button>
+                            </form>
+                        </Paper>
+                    </main>}
+                </div>
             </div>
         );
     }
