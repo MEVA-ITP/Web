@@ -15,6 +15,7 @@ import Bundles from "views/Bundles/Bundles.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import admincmdpage from "views/AdminConsole/admincmd.jsx";
+import Logout from "@material-ui/icons/KeyboardTab";
 
 
 const dashboardRoutes = [
@@ -65,6 +66,13 @@ const dashboardRoutes = [
         sidebarName: "Notifications",
         navbarName: "Notifications",
         icon: "notifications_active",
+        component: NotificationsPage
+    },
+    {
+        path: "/login",
+        sidebarName: "Logout",
+        navbarName: "Logout",
+        icon: "keyboard_tab",
         component: NotificationsPage
     },
     {redirect: true, path: "/", to: "/login", navbarName: "Redirect"}

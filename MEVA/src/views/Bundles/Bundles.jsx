@@ -94,7 +94,6 @@ function TypographyPage(props) {
                     </div>
                     <CardFooter chart>
                         <div className={classes.stats}>
-                            <AccessTime/> updated 4 minutes ago
                         </div>
                     </CardFooter>
                 </Card>
@@ -122,7 +121,6 @@ function TypographyPage(props) {
                     </div>
                     <CardFooter chart>
                         <div className={classes.stats}>
-                            <AccessTime/> updated 4 minutes ago
                         </div>
                     </CardFooter>
                 </Card>

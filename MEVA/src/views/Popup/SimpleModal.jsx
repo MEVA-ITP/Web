@@ -6,12 +6,12 @@ import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 
 function getModalStyle() {
-    const top = 55
-    const left = 55
+    const top = 0
+    const left = 0
 
     return {
-        top: `54.6%`,
-        left: `60%`,
+        top: 50,
+        left: 260,
         transform: `translate(-${top}%, -${left}%)`,
     };
 }
