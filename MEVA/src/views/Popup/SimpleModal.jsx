@@ -11,16 +11,16 @@ function getModalStyle() {
 
     return {
         top: 50,
-        left: 260,
-        transform: `translate(-${top}%, -${left}%)`,
+        left: 250,
+        transform: 'translate(-${top}%, -${left}%)',
     };
 }
 
 const styles = theme => ({
     paper: {
         position: 'absolute',
-        width: '78.7%',
-        height: '91.5%',
+        width: '80%',
+        height: '90%',
         backgroundColor: theme.palette.background.paper,
         boxShadow: theme.shadows[5],
 
@@ -57,12 +57,15 @@ class SimpleModal extends React.Component {
                     onClose={this.handleClose}
                 >
                     <div style={getModalStyle()} className={classes.paper}>
-                        <Typography variant="h6" id="modal-title">
-                            Reservierung
-                        </Typography>
-                        <Typography variant="subtitle1" id="simple-modal-description">
-                            Hier wird der Fenster fertig gestellt wo man die Artikeln reservieren kann.
-                        </Typography>
+                        <div style={{margin: '2%'}}>
+                            <Typography variant="h6" id="modal-title">
+                                Reservierung
+                            </Typography>
+                            <Typography variant="subtitle1" id="simple-modal-description">
+                                Reservierung werden hier gemacht
+                            </Typography>
+
+                        </div>
                     </div>
                 </Modal>
             </div>

@@ -64,7 +64,8 @@ class PopUpIcon extends React.Component {
             >
                 <div style={getModalStyle()} className={classes.paper}>
                     <Button onClick={this.handleOpen} >
-                        <Icon className={classes.icon} onClick={() => this.handleClose()}>compress</Icon></Button>
+                        <Icon className={classes.icon} onClick={() => this.handleClose()}>compress</Icon>
+                    </Button>
                     <Typography variant="h6" id="modal-title">
                     Reservierung
                     </Typography>
