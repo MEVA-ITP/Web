@@ -11,7 +11,7 @@ function getModalStyle() {
 
     return {
         top: `54.6%`,
-        left: `62.5%`,
+        left: `60%`,
         transform: `translate(-${top}%, -${left}%)`,
     };
 }
