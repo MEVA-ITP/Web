@@ -6,12 +6,12 @@ import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 
 function getModalStyle() {
-    const top = 55
-    const left = 55
+    const top = 0
+    const left = 0
 
     return {
-        top: `54.6%`,
-        left: `60%`,
+        top: 50,
+        left: 250,
         transform: `translate(-${top}%, -${left}%)`,
     };
 }
@@ -19,8 +19,8 @@ function getModalStyle() {
 const styles = theme => ({
     paper: {
         position: 'absolute',
-        width: '78.7%',
-        height: '91.5%',
+        width: '80%',
+        height: '90%',
         backgroundColor: theme.palette.background.paper,
         boxShadow: theme.shadows[5],
 
@@ -57,12 +57,15 @@ class SimpleModal extends React.Component {
                     onClose={this.handleClose}
                 >
                     <div style={getModalStyle()} className={classes.paper}>
+                        <div style={{margin: '2%'}}>
                         <Typography variant="h6" id="modal-title">
                             Reservierung
                         </Typography>
                         <Typography variant="subtitle1" id="simple-modal-description">
-                            Hier wird der Fenster fertig gestellt wo man die Artikeln reservieren kann.
+                            Reservierung werden hier gemacht
                         </Typography>
+
+                        </div>
                     </div>
                 </Modal>
             </div>
